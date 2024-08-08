@@ -14,6 +14,7 @@
 		09AA47542C641D0000737F26 /* SearchTVShowsWithCombineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09AA47532C641D0000737F26 /* SearchTVShowsWithCombineTests.swift */; };
 		09AA475E2C641D0000737F26 /* SearchTVShowsWithCombineUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09AA475D2C641D0000737F26 /* SearchTVShowsWithCombineUITests.swift */; };
 		09AA47602C641D0000737F26 /* SearchTVShowsWithCombineUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09AA475F2C641D0000737F26 /* SearchTVShowsWithCombineUITestsLaunchTests.swift */; };
+		09AA476F2C64505000737F26 /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09AA476E2C64505000737F26 /* AppColors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		09AA47592C641D0000737F26 /* SearchTVShowsWithCombineUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SearchTVShowsWithCombineUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		09AA475D2C641D0000737F26 /* SearchTVShowsWithCombineUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTVShowsWithCombineUITests.swift; sourceTree = "<group>"; };
 		09AA475F2C641D0000737F26 /* SearchTVShowsWithCombineUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTVShowsWithCombineUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		09AA476E2C64505000737F26 /* AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +96,9 @@
 		09AA47412C641CF500737F26 /* SearchTVShowsWithCombine */ = {
 			isa = PBXGroup;
 			children = (
+				09AA476D2C64503300737F26 /* Utilities */,
+				09AA476C2C644F6900737F26 /* Views */,
 				09AA47422C641CF500737F26 /* SearchTVShowsWithCombineApp.swift */,
-				09AA47442C641CF500737F26 /* ContentView.swift */,
 				09AA47462C641CFF00737F26 /* Assets.xcassets */,
 				09AA47482C641CFF00737F26 /* Preview Content */,
 			);
@@ -125,6 +128,22 @@
 				09AA475F2C641D0000737F26 /* SearchTVShowsWithCombineUITestsLaunchTests.swift */,
 			);
 			path = SearchTVShowsWithCombineUITests;
+			sourceTree = "<group>";
+		};
+		09AA476C2C644F6900737F26 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				09AA47442C641CF500737F26 /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		09AA476D2C64503300737F26 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				09AA476E2C64505000737F26 /* AppColors.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,6 +276,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09AA476F2C64505000737F26 /* AppColors.swift in Sources */,
 				09AA47452C641CF500737F26 /* ContentView.swift in Sources */,
 				09AA47432C641CF500737F26 /* SearchTVShowsWithCombineApp.swift in Sources */,
 			);
