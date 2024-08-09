@@ -15,6 +15,10 @@
 		09AA475E2C641D0000737F26 /* SearchTVShowsWithCombineUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09AA475D2C641D0000737F26 /* SearchTVShowsWithCombineUITests.swift */; };
 		09AA47602C641D0000737F26 /* SearchTVShowsWithCombineUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09AA475F2C641D0000737F26 /* SearchTVShowsWithCombineUITestsLaunchTests.swift */; };
 		09AA476F2C64505000737F26 /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09AA476E2C64505000737F26 /* AppColors.swift */; };
+		09AA47752C653CBB00737F26 /* TVShowSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09AA47742C653CBB00737F26 /* TVShowSearch.swift */; };
+		09AA47792C65CCB500737F26 /* TVShowServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09AA47782C65CCB500737F26 /* TVShowServiceProtocol.swift */; };
+		09AA477B2C65CD3500737F26 /* TVShowServiceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09AA477A2C65CD3500737F26 /* TVShowServiceImpl.swift */; };
+		09AA477D2C65CF6600737F26 /* TVShowServiceKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09AA477C2C65CF6600737F26 /* TVShowServiceKey.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +50,10 @@
 		09AA475D2C641D0000737F26 /* SearchTVShowsWithCombineUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTVShowsWithCombineUITests.swift; sourceTree = "<group>"; };
 		09AA475F2C641D0000737F26 /* SearchTVShowsWithCombineUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTVShowsWithCombineUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		09AA476E2C64505000737F26 /* AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
+		09AA47742C653CBB00737F26 /* TVShowSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVShowSearch.swift; sourceTree = "<group>"; };
+		09AA47782C65CCB500737F26 /* TVShowServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVShowServiceProtocol.swift; sourceTree = "<group>"; };
+		09AA477A2C65CD3500737F26 /* TVShowServiceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVShowServiceImpl.swift; sourceTree = "<group>"; };
+		09AA477C2C65CF6600737F26 /* TVShowServiceKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVShowServiceKey.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +104,9 @@
 		09AA47412C641CF500737F26 /* SearchTVShowsWithCombine */ = {
 			isa = PBXGroup;
 			children = (
+				09AA47772C65CC4500737F26 /* NetworkingService */,
+				09AA47762C653F4600737F26 /* Protocols */,
+				09AA47702C645AB300737F26 /* Models */,
 				09AA476D2C64503300737F26 /* Utilities */,
 				09AA476C2C644F6900737F26 /* Views */,
 				09AA47422C641CF500737F26 /* SearchTVShowsWithCombineApp.swift */,
@@ -144,6 +155,31 @@
 				09AA476E2C64505000737F26 /* AppColors.swift */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		09AA47702C645AB300737F26 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				09AA47742C653CBB00737F26 /* TVShowSearch.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		09AA47762C653F4600737F26 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				09AA47782C65CCB500737F26 /* TVShowServiceProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		09AA47772C65CC4500737F26 /* NetworkingService */ = {
+			isa = PBXGroup;
+			children = (
+				09AA477A2C65CD3500737F26 /* TVShowServiceImpl.swift */,
+				09AA477C2C65CF6600737F26 /* TVShowServiceKey.swift */,
+			);
+			path = NetworkingService;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -276,8 +312,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09AA477B2C65CD3500737F26 /* TVShowServiceImpl.swift in Sources */,
+				09AA477D2C65CF6600737F26 /* TVShowServiceKey.swift in Sources */,
 				09AA476F2C64505000737F26 /* AppColors.swift in Sources */,
 				09AA47452C641CF500737F26 /* ContentView.swift in Sources */,
+				09AA47792C65CCB500737F26 /* TVShowServiceProtocol.swift in Sources */,
+				09AA47752C653CBB00737F26 /* TVShowSearch.swift in Sources */,
 				09AA47432C641CF500737F26 /* SearchTVShowsWithCombineApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
